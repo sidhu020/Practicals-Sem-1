@@ -1,0 +1,36 @@
+<!--CSS3 transition shorthand property-->
+
+<html>
+<head>
+
+	<style> 
+	div {
+	    width: 100px;
+	    height: 100px;
+	    background: red;
+	    transition: width 2s linear 1s; /*short-hand*/
+
+            /*
+		transition-property: width;
+    		transition-duration: 2s;
+    		transition-timing-function: linear;
+	    	transition-delay: 1s;
+	    */	
+	}
+
+	div:hover {
+	    width: 300px;
+	}
+	</style>
+</head>
+
+<body>
+
+	<div></div>
+
+	<p>Hover over the div element above, to see the transition effect.</p>
+	<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>
+

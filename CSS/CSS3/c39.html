@@ -1,0 +1,70 @@
+<!--CSS3 2D transform rotate()-->
+
+<html>
+<head>
+
+	<style>
+
+		div{
+		    width: 300px;
+		    height: 100px;
+		    background-color: yellow;
+		    border: 1px solid black;
+		}
+		div:hover	
+		{
+			transform: rotate(20deg);
+		}
+
+		p{
+		    width: 300px;
+		    height: 100px;
+		    background-color: yellow;
+		    border: 1px solid black;
+		}
+		p:hover	
+		{
+			transform: rotate(20deg);
+		}
+		#myDiv:hover
+		{
+  		    width: 300px;
+		    height: 100px;
+		    background-color: pink;
+		    border: 1px solid black;
+		    transform: rotate(90deg);	
+		}
+
+		div#myDiv:hover 
+		  {
+		 	width: 300px;
+		    	height: 100px;
+		    	background-color: green;
+		    	border: 1px solid black;
+		    	transform: rotate(50deg);	
+		   }
+	
+	}
+	
+	</style>
+
+</head>
+
+<body>
+
+	<div>
+		This a normal div element.
+	</div>
+	
+	<p id="myDiv">	
+		This a normal div element.
+	</p>
+		
+
+	<div id="myDiv">
+		The rotate() method rotates an element clockwise or counter-clockwise. 
+		This div element is rotated clockwise 20 degrees.
+	</div>
+
+</body>
+</html>

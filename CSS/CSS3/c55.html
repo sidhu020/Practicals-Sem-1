@@ -1,0 +1,31 @@
+
+<!--CSS3 Transition + Transformation-->
+
+<html>
+<head>
+
+	<style> 
+		div {	
+		    width: 100px;
+		    height: 100px;
+		    background: red;
+		    transition: width 3s, height 3s, transform 3s; /* short hand */
+		}
+
+		div:hover {
+		    width: 300px;
+		    height: 300px;
+		    transform: rotate(360deg); /* 0deg - 360deg - 3s */
+		}
+	</style>
+</head>
+
+<body>
+
+	<div></div>
+
+	<p>Hover over the div element above, to see the transition effect.</p>
+
+</body>
+</html>
+
