@@ -1,0 +1,43 @@
+<!-- JavaScript onreset Event-->
+
+<html>
+
+	<body onload="clr()">
+
+		<p>When you reset the form, a function is triggered which outputs some text.</p>
+
+		<form id="myForm" onreset="myFunction()">
+			
+			  Enter name: <input type="text" id="txt">
+			  <input type="reset">
+		</form>
+
+		<p id="demo"></p>
+
+		<script>
+
+			function myFunction() 
+			{
+			document.getElementById("demo").innerHTML = "The form was reset";
+		    	    document.getElementById("txt").focus();
+			}
+
+			function clr()
+			{
+				document.getElementById("txt").focus();
+			}
+			
+			
+		</script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+

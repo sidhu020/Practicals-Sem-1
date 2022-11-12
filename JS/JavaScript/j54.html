@@ -1,0 +1,40 @@
+<!-- JavaScript onchange Event-->
+
+<html>
+	<head>
+		<script>
+			function myFunction(y)
+			{
+				y.value=y.value.toUpperCase();
+			}
+			function clr()
+			{
+				document.getElementById("fname").value="";
+				document.getElementById("fname").focus();
+			}
+		</script>
+
+	</head>
+	
+	<body onload="clr()">
+
+		Enter your name: <input type="text" id="fname" onchange="myFunction(this)">
+		
+		<p>When you leave the input field, a function is triggered which transforms 
+	     	   the input text to upper case.
+		</p>
+
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

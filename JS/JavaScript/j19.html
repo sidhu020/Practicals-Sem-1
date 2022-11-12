@@ -1,0 +1,67 @@
+<!-- JavaScript Switch Case-->
+
+<html>
+
+
+
+	<body>
+
+
+
+		<script>
+
+				var p=0;
+				var r=0;
+				var n=0;
+				var si=0;
+
+				p=prompt('Enter P: ');
+
+
+
+				switch(p)
+				{
+					case 1000:
+							r=0.01;	
+							n=1;
+							break;
+					case 5000:
+
+							r=0.02;
+							n=2;
+							break;
+
+					case 10000:
+							r=0.03;
+							n=3;
+							break;
+					case 20000:
+							r=0.04;
+							n=4;
+							break;
+					case 30000:
+							r=0.05;
+							n=5;
+							break;
+
+					default:
+							r=0.08;
+							n=10;
+				}
+
+				
+				si=(p*r*n)/100;
+
+				document.write('Simple Interest Is: ' +si);				
+												
+
+
+		</script>
+
+
+
+
+	</body>
+
+
+</html>

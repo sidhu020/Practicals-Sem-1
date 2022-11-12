@@ -1,0 +1,34 @@
+<!-- JavaScript onkeypress Event-->
+
+<html>
+	<head>
+		<script>
+			function myFunction()
+			{
+		document.getElementById("hh").innerHTML=document.getElementById("txt").value;
+			}
+
+			function clr()
+			{
+		document.getElementById("txt").value="";
+		document.getElementById("txt").focus(); 
+			} 
+		</script>
+	</head>
+	
+	<body onload="clr()">
+
+		<p>A function is triggered when the user is pressing a key in the input field.</p>
+
+	<input type="text" onkeypress="myFunction()" id="txt">
+	
+
+	<h1 id="hh"></h1>			
+
+	</body>
+
+</html>
+
+
+
+

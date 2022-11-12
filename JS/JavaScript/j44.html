@@ -1,0 +1,129 @@
+<!-- JavaScript Array Object-->
+
+<html>
+	<body>
+
+		<script>
+
+			document.write('Use of Array Object'+'<br>'+'<br>');					
+			//Array Object
+			document.write('Array Object <br>');
+
+		var a = ['ram','raj','suresh'];		//Array Object
+
+			document.write('Array Length: '+a.length);
+						
+			document.write('<br><br>');
+
+			//Join Method
+
+			document.write('Join Method <br>');
+
+
+			document.write(a.join("#")); 
+
+
+			document.write('<br><br>');
+
+
+			
+			//Reverse Method
+
+			
+			var a=['ajay','brijesh','paresh','kishor','mitesh','ganesh'];
+
+			document.write('Reverse Method <br>');
+
+			document.write(a.reverse());
+
+
+			document.write('<br><br>');
+
+
+			//Pop Method
+
+
+			document.write('Pop Method <br>');
+
+			var i=[10,20,30,40,50];
+
+			var j=0;
+
+			for(j=i.length-1;j>=0;j--)
+			{
+			
+				document.write('Pop['+j+']: ' + i.pop());
+				document.write('<br>');
+			}
+			document.write(i.length);
+			
+			document.write('<br>');
+
+			//Push Method
+
+			document.write('Push Method <br>');
+
+			var i=[10,20,30];
+
+			var k=0;
+
+				i.push(40,50,60);
+
+	
+			for(k=0;k<i.length;k++)
+			{
+				document.write(i[k]);
+				
+				document.write('<br>');
+
+			}
+
+			document.write('<br>');
+
+			//shift method
+
+			document.write('Shift Method <br>');
+
+			var i=[10,20,30];
+
+
+			i.shift();
+			i.shift();	
+
+			for(k=0;k<i.length;k++)
+			{
+				document.write(i[k]);
+				
+				document.write('<br>');
+			}
+	
+
+
+			document.write('<br>');
+
+			//sort method
+
+
+			document.write('Sort Method <br>');
+			
+
+			var i=['rajesh','amit','ankit','ajay'];
+			
+			i.sort();
+			
+			
+			for(k=0;k<i.length;k++)
+			{
+				document.write(i[k]);
+				
+				document.write('<br>');
+			}
+		
+		</script>		
+
+	
+	</body>
+
+
+</html>
+

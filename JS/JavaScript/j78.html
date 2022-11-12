@@ -1,0 +1,49 @@
+<!-- JavaScript E-mail Validation -->
+
+
+<html>
+	<head>
+		<script>
+ 			
+			function validateForm() 
+			{
+
+	    			var x = document.forms["myForm"]["email"].value;
+
+				var atpos = x.indexOf("@");	//first occurance of "@"
+    				var dotpos = x.lastIndexOf("."); // last occurance of "."
+				
+				alert(atpos);
+				alert(dotpos);  
+    				
+				if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) 
+				{
+       					alert("Not a valid e-mail address");
+        				return false;
+    				}
+			}
+		</script>
+	</head>
+
+	<body>
+		
+
+		<form name="myForm" action="j1.html" onsubmit=" return validateForm();">
+			
+			Email: <input type="text" name="email">
+			<input type="submit" value="Submit">
+			
+
+		</form>
+	</body>
+
+</html>
+
+
+
+	
+
+
+
+
+

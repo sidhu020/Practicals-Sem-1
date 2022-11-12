@@ -1,0 +1,30 @@
+<!-- JavaScript onfocus Event-->
+
+<html>
+
+
+	<head>
+		<script>
+			function myFunction(x)
+			{
+				x.style.background="yellow";
+				x.style.color="ff00ff";
+
+			}
+			function clr()
+			{
+				document.getElementById("txt").value="";
+				
+			
+			}
+		</script>
+	</head>
+
+	<body onload="clr()">
+
+		Enter your name: <input type="text" onfocus="myFunction(this)" id="txt">
+			
+		<p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+	</body>
+</html>

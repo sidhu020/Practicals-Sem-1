@@ -1,0 +1,43 @@
+<!-- JavaScript Form Validation for User Name & Password -->
+
+
+<html>
+
+
+	<script>  
+
+		function validateform()
+		{  
+			//var name=document.forms["myform"]["name"].value;
+			//var name=document.getElementById("name").value;
+			
+
+			var name=document.myform.name.value;  
+
+			var password=document.myform.password.value;  
+  
+			if (name==null || name=="")
+			{  
+  				alert("Name can't be blank");  
+  				return false;  
+			}
+			else if(password.length<6)
+			{  
+  				alert("Password must be at least 6 characters long.");  
+  				return false;  
+  			}  
+		}  
+	</script>  
+
+	<body>  
+		<form name="myform" action="j77-a.html" onsubmit="return validateform()">  
+
+			Name: <input type="text" name="name"><br/><br>  
+		
+			Password: <input type="password" name="password"><br/>  
+
+			<input type="submit" value="Register">  
+		
+		</form>  
+	</body>
+</html>

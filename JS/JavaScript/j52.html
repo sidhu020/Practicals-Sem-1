@@ -1,0 +1,35 @@
+<!-- JavaScript onblur Event-->
+
+<html>
+	<head>
+		<script>
+			function myFunction(x)
+			{
+				x.value=x.value.toUpperCase();
+				
+			}
+			function clr()
+			{
+				document.getElementById("fname").value="";
+				document.getElementById("fname").focus();
+			}
+		</script>
+	</head>
+
+	<body onload="clr()">
+
+		Enter your name: <input type="text" id="fname" onblur="myFunction(this)">
+
+		<p>When you leave the input field, a function is triggered which transforms 
+		the input text to upper case.</p>
+			
+		<input type="button" value="OK">
+
+	</body>
+
+</html>
+
+
+
+
+

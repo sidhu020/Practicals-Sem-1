@@ -1,0 +1,144 @@
+<!-- JavaScript String Object-->
+
+<html>
+
+	<body>
+
+		<script>
+		
+		document.write('Use of String Object and Methods based on String Object'+'<br>'+'<br>');	
+
+			//charAt() use
+
+			var s='Ramesh Mehta';
+			document.write('charAt(3): '+s.charAt(5));
+
+			document.write('<br>');
+
+			//concat() use
+
+			var i='Ramesh';
+		document.write('Concat: '+"Ramesh".concat(' ','Mehta'));
+
+
+			document.write('<br>');			
+
+
+			//indexOf() use
+
+			document.write('indexOf: '+'Ramesh Ramesh'.indexOf('esh',4));			
+			
+
+			document.write('<br>');
+
+
+			//lastIndexOf() use
+
+			var s='Ramesh Ram';
+
+			document.write('lastIndexOf:'+s.lastIndexOf('Ram',s.length));			
+			
+
+			document.write('<br>');
+
+			
+			//replace use
+
+			document.write('replace:'+'ramesh'.replace('ram','raj'));			
+			
+
+			document.write('<br>');
+
+
+
+			//search() use
+
+			document.write('search: '+'Ramesh'.search('esh'));			
+
+			document.write('<br>');
+
+			//substr() use
+
+			document.write('substr: '+'Ramesh Rajesh'.substr(7,3));			
+			
+
+			document.write('<br>');
+
+
+			//substring() use
+
+			var s='Ramesh Rajesh';
+
+			document.write(s.length+"<br>");
+
+			document.write('substr: '+s.substring(3,s.length));			
+			
+
+			document.write('<br>');
+
+
+			//lowercase() use
+
+			document.write('toLowerCase: '+'RAM'.toLowerCase());			
+			
+
+			document.write('<br>');
+
+
+			//uppercase() use
+
+			document.write('toUpperCase: '+'ram'.toUpperCase());			
+			
+
+			document.write('<br>');
+
+
+			//split() use
+		
+			var i=30;
+			document.write("Age is: "+i);
+			document.write("<br>");
+
+			var i=new Array();
+
+			var j="ram@ramesh@rajesh@rakesh";
+
+			i=j.split("@");
+			
+			document.write(i.length+"<br>");
+
+			for(var k=0;k<i.length;k++)
+				document.write(i[k]+"<br>");			
+
+
+			document.write('<br>');
+ 
+			//valueOf() use
+
+			var s='ramesh age is';				
+			document.write(typeof(s)+"<br>");
+
+			var age=20;
+			document.write(typeof(age)+"<br>");
+			
+			var k=s + " " +age;
+			document.write(k+"<br>");
+			document.write(typeof(k));
+	
+		</script>		
+
+	
+	</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+

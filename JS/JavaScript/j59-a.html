@@ -1,0 +1,29 @@
+<!-- JavaScript Finding HTML Element By Tag-->
+
+
+<html>
+
+	<body>
+
+		<p>Hello World!</p>
+
+		<div id="main">
+		
+			<p>The DOM is very useful.</p>
+	
+			<p>This example demonstrates the <b>getElementsByTagName</b> method</p>
+		</div>
+
+		<p id="demo"></p>
+
+	<script>
+
+		var x = document.getElementById("main");  //x-div element rerence
+		var y = x.getElementsByTagName("p"); //array of 2 elements , index [0], [1]
+
+document.getElementById("demo").innerHTML = 'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!-- JavaScript User Defined Function-->
+
+<html>
+
+
+
+	<body>
+
+
+
+		<script>
+				var k=0;
+
+				function abc(k)
+				{
+
+					
+
+					var i=0,j=0;
+
+					i=parseInt(prompt('Enter Value for I:',0));
+	
+					j=parseInt(prompt('Enter Value for I:',0));					
+
+					
+					if(k==1)
+				
+						document.write('Addition Is: '+(i+j));
+
+					else if(k==2)
+						document.write('Subtraction Is: '+(i-j));
+					
+					else if(k==3)
+						document.write('Multiplication Is: '+(i*j));
+					
+					else if(k==4)
+						document.write('Division Is: '+(i/j));
+
+				}
+			
+
+		</script>
+
+
+			<input type='button' onclick='abc(1)' value='Addition'>
+
+
+			<input type='button' onclick=abc(2) value='Subtraction'>
+
+
+			<input type='button' onclick=abc(3) value='Multiplication'>
+
+
+			<input type='button' onclick=abc(4) value='Division'>
+
+
+	</body>
+
+
+</html>

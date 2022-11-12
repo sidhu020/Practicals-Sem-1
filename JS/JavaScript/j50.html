@@ -1,0 +1,45 @@
+<!-- JavaScript onkeyup Event-->
+
+<html>
+	<head>
+
+		<script>
+
+			function myFunction()
+			{
+				var x=document.getElementById("fname"); //element reference store
+				x.value=x.value.toUpperCase();
+				
+/*document.getElementById("fname").value=document.getElementById("fname").value.toUpperCase();*/
+			}
+			
+			function clr()
+			{
+				document.getElementById("fname").value="";
+				document.getElementById("fname").focus();
+			}
+			
+		</script>
+
+	</head>
+
+	<body onload="clr()">
+		<p>A function is triggered when the user releases a key in the input
+		   field. The function transforms the character to upper case.
+		</p>
+
+		Enter your name: <input type="text" id="fname" onkeyup="myFunction()">
+
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
